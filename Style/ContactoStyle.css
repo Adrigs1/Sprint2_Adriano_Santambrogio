@@ -1,0 +1,26 @@
+body {
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+
+}
+
+.menu {
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 1000ms;
+
+}
+
+.menu:hover {
+    background-color: #b376c2;
+    width: 50%;
+    text-decoration: underline #cd49ee;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    transition: 400ms;
+    margin-left: 35%;
+}

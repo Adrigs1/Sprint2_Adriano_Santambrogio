@@ -1,0 +1,72 @@
+body {
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.menu {
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 1000ms;
+
+}
+
+.menu:hover {
+    background-color: #b376c2;
+    width: 50%;
+    text-decoration: underline #cd49ee;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    transition: 400ms;
+    margin-left: 35%;
+}
+
+.Contenedor {
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "diasyhorarios Locacion"
+        "Maps Maps";
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    /*background: rgba(153, 225, 243, 0.527);
+    backdrop-filter: blur(1px);*/
+}
+
+.Contenedor .diasyhorarios {
+    grid-area: diasyhorarios;
+    border-radius: 50%;
+
+}
+
+.Locacion .p {
+    grid-area: locacion;
+
+
+}
+
+.Maps {
+    grid-area: Maps;
+    width: 95%;
+    height: 75%;
+    padding-left: 2.5%;
+    border-radius: 5%;
+}
+
+h2 {
+    color: rgb(170, 227, 241);
+    text-align: center;
+    font-size: 150%;
+}
+
+/*.mapgoogle {
+    border-radius: 5%;
+}*/
