@@ -1,3 +1,5 @@
+
+
 body {
     background-image: url(../img/fondo1.jpg);
     background-repeat: repeat-y;
@@ -5,31 +7,38 @@ body {
 
 }
 
-.menu {
-    color: antiquewhite;
-    text-decoration: none;
-    padding: 10px 30px;
-    transition: 1000ms;
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: black;
 }
 
-.menu:hover {
-    background-color: #b376c2;
-    width: 50%;
-    text-decoration: underline #cd49ee;
-}
 
-nav {
-    background-color: rgb(0, 0, 0);
-    transition: 400ms;
-    margin-left: 35%;
-}
+    header li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.3s ease 0s;
+    }
+    
+    header a:hover {
+        color: #f006b5;
+    }
+
+
 
 
 .Nyalogo {
     border-radius: 100%;
     width: 20%;
-    
     margin-left: 40%;
     transition: 600ms;
     margin-top: 5%;
@@ -56,7 +65,7 @@ p {
 }
 
 h1 {
-
+    
     font-size: 40px;
     background: #ccc;
     background-clip: border-box;
@@ -74,6 +83,7 @@ h2 {
 
 }
 
+
 div article {
     width: auto;
     height: auto;
@@ -81,7 +91,6 @@ div article {
     text-align: center;
     text-decoration: none;
     padding-top: 4px;
-    padding-bottom: auto;
     transition: 800ms;
 
 
@@ -94,6 +103,19 @@ article:hover {
 
 }
 
+.botonera2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px
+}
+
+.botonera3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
 
 .imagengaleria {
     width: 100px;
@@ -112,25 +134,37 @@ hr {
     width: 85%;
 }
 
-.boton1 {
-    position: absolute;
-    margin-left: 29%;
-}
-
-.boton2 {
-    position: absolute;
-    margin-left: 52%;
+footer { 
+    background-color: rgb(63, 8, 54);
 
 }
 
-.boton3 {
+.socialIcons {
+    width: 100%;
+    padding: 70px 30px 20px;
 
-    position: absolute;
-    margin-left: 10%
 }
 
-.boton4 {
-    position: absolute;
-    margin-left: 77%;
+@media (max-width:600px){
+    
+    .Bienvenida {
+        font-size: 10%;
+    }
+    h4{
+        font-size: 30%;
+    }
+ 
+.imagengaleria{
+    width: 25px;
+    height: auto;
+}
+}
 
+@media (max-width: 700px) {
+    
+    nav {font-size: 8px;}
+    ul{width: 100%;
+    margin:0px;}
+    p{ font-size: 14px;}
+    h2{font-size: 20px;}
 }

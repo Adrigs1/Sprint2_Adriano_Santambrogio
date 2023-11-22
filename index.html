@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./Style/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <title>NyA Entrenamientos</title>
 </head>
 
 <body>
-    <nav>
-        <a href="page/Clases.html" class="menu">Clases</a>
-        <a href="page/Galería.html" class="menu">Galería</a>
-        <a href="page/Noticias.html" class="menu">Noticias</a>
-        <a href="page/Contacto.html" class="menu">Contacto</a>
-
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="./page/Clases.html" class="menu">Clases</a></li>
+                <li><a href="./page/Galería.html" class="menu">Galería</a></li>
+                <li><a href="./page/Noticias.html" class="menu">Herramientas</a></li>
+                <li><a href="./page/Contacto.html" class="menu">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="imagenLogo">
 
@@ -25,47 +31,47 @@
     </div>
 
     <section class="Bienvenida">
-        <h1>Entrenate y mejorá tu calidad de vida</h1>
-        <p>Hacer actividad física regularmente es una de las cosas más importantes que puedes hacer por tu salud. <br>
+        <h1 class="animate__animated animate__bounceIn">Entrenate y mejorá tu calidad de vida</h1>
+        <p class="animate__animated animate__fadeInDown" >Hacer actividad física regularmente es una de las cosas más importantes que puedes hacer por tu salud. <br>
             Todos pueden beneficiarse de la actividad física no importa su edad, habilidades, etnicidad o la forma y
             tamaño de su cuerpo. <br> No estás seguro de cómo comenzar o aumentar tu nivel de actividad física porque
             tienes miedo a lastimarte, hay buenas noticias:</p>
-        <h2>En NyA Entrenamientos podemos ayudarte </h2>
+        <h2 class="animate__animated animate__bounce animate__repeat-2 ">En NyA Entrenamientos podemos ayudarte </h2>
     </section>
 
     <hr size=2px>
 
-    <section class="botonera">
-        <Div class="botonera2">
-            <a href="./page/Galería.html">
-                <article class="boton1">
-                    <h4>Así son nuestros entrenamientos </h4>
-                    <img src="./img/Galeria.jpeg" alt="galeria" class="imagengaleria">
-                </article>
-            </a>
-            <a href="page/Clases.html">
-                <article class="boton2">
-                    <h4>¿Dónde y Cuándo entrenamos?</h4>
-                    <img src="./img/diaylugar.jpg" alt="galeria" class="imagengaleria">
-                </article>
-            </a>
-        </Div>
-        <div class="botonera2">
-            <a href="page/Noticias.html" >
-                <article class="boton3">
-                    <h4>Noticias y Herramientas</h4>
-                    <img src="./img/Noticiasyherramientas.jpg" class="imagengaleria">
-                </article>
-            </a>
-            <a href="page/Contacto.html">
-                <article class="boton4">
-                    <h4>Contactá con nosotros</h4>
-                    <img src="./img/contacto.jpg" class="imagengaleria">
-                </article>
-            </a>
-        </div>
-    </section>
-   
+    <Div class="botonera2">
+        <a href="./page/Galería.html">
+            <article class="boton1">
+                <h4>Así son nuestros entrenamientos </h4>
+                <img src="./img/Galeria.jpeg" alt="galeria" class="imagengaleria">
+            </article>
+        </a>
+        <a href="page/Clases.html">
+            <article class="boton2">
+                <h4>¿Dónde y Cuándo entrenamos?</h4>
+                <img src="./img/diaylugar.jpg" alt="galeria" class="imagengaleria">
+            </article>
+        </a>
+    </Div>
+
+
+    <div class="botonera3">
+        <a href="page/Noticias.html">
+            <article class="boton3">
+                <h4>Noticias y Herramientas</h4>
+                <img src="./img/Noticiasyherramientas.jpg" class="imagengaleria">
+            </article>
+        </a>
+        <a href="page/Contacto.html">
+            <article class="boton4">
+                <h4>Contactá con nosotros</h4>
+                <img src="./img/contacto.jpg" class="imagengaleria">
+            </article>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

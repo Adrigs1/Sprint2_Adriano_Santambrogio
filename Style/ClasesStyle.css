@@ -2,27 +2,41 @@ body {
     background-image: url(../img/fondo1.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
-}
-
-.menu {
-    color: antiquewhite;
-    text-decoration: none;
-    padding: 10px 30px;
-    transition: 1000ms;
 
 }
 
-.menu:hover {
-    background-color: #b376c2;
-    width: 50%;
-    text-decoration: underline #cd49ee;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 7px #ef8af8;
+    background-color: black;
 }
 
-nav {
-    background-color: rgb(0, 0, 0);
-    transition: 400ms;
-    margin-left: 35%;
-}
+
+
+    header li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;
+        
+    }
+    
+    header a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.3s ease 0s;
+    }
+    
+    header a:hover {
+        color: #f006b5;
+    }
+
+hr{
+        box-shadow: 0 1px 7px #ef8af8;
+        margin-top: 10%;
+    }
 
 .Contenedor {
     margin-left: 5%;
@@ -31,14 +45,15 @@ nav {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: "diasyhorarios Locacion"
         "Maps Maps";
     margin-top: 5%;
     align-items: center;
     justify-content: center;
-    /*background: rgba(153, 225, 243, 0.527);
-    backdrop-filter: blur(1px);*/
+    border-radius: 2%;
+    transition: 800ms;
+    
 }
 
 .Contenedor .diasyhorarios {
@@ -46,6 +61,10 @@ nav {
     border-radius: 50%;
 
 }
+
+/* .Contenedor:hover{
+    box-shadow: 0 1px 12px #8aebf8;
+} */
 
 .Locacion .p {
     grid-area: locacion;
@@ -56,7 +75,7 @@ nav {
 .Maps {
     grid-area: Maps;
     width: 95%;
-    height: 75%;
+    height: 95%;
     padding-left: 2.5%;
     border-radius: 5%;
 }
@@ -67,6 +86,48 @@ h2 {
     font-size: 150%;
 }
 
-/*.mapgoogle {
-    border-radius: 5%;
-}*/
+footer {
+    background-color: #350036;
+    
+}
+
+.FooterIcons {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    
+
+}
+.socialIcons {
+    justify-content: center;
+    display: flex;
+    
+
+}
+
+.socialIcons a {
+    color: #f006b5;
+    text-decoration: none;
+    padding:10px;
+    margin: 10px;
+    border-radius: 100%;
+    
+}
+
+p {
+    color: #ffffff;
+   
+    text-align: center;
+}
+
+
+
+@media (max-width: 700px) {
+    
+    nav {font-size: 8px;}
+    ul{width: 100%;
+    margin:0px;}
+    p{ font-size: 14px;}
+    h2{font-size: 20px;}
+}
+

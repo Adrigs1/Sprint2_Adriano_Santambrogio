@@ -2,25 +2,151 @@ body {
     background-image: url(../img/fondo1.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
-
+    
 }
 
-.menu {
-    color: antiquewhite;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 7px #ef8af8;
+    background-color: black;
+}
+
+
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
     text-decoration: none;
-    padding: 10px 30px;
-    transition: 1000ms;
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #f006b5;
+}
+
+footer {
+    background-color: #350036;
 
 }
 
-.menu:hover {
-    background-color: #b376c2;
-    width: 50%;
-    text-decoration: underline #cd49ee;
+.FooterIcons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
 }
 
-nav {
-    background-color: rgb(0, 0, 0);
-    transition: 400ms;
-    margin-left: 35%;
+.socialIcons {
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.socialIcons a {
+    color: #f006b5;
+    text-decoration: none;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 100%;
+
+}
+
+/* .carrousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.ImgCarrousel {
+    flex: 1 0 auto;
+    margin: 1px;
+    max-width: 30%;
+    max-height: auto;
+    min-width: 10%;
+    min-height: auto;
+
+
+}
+
+img {
+    width: 25%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.carrousel:hover {
+    overflow: scroll;
+        background-color: #fa04bc transparent;
+    transform: scale(1.1);
+
+} */
+
+.contenedor1videos {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video {
+    width: 25%;
+    height: auto;
+    border-radius: 8%;
+}
+
+h1 {
+    margin: 25px;
+    text-align: center;
+    background: #ccc;
+    background-clip: border-box;
+    background: radial-gradient(#6dacd6, #cd49ee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.CARRUSEL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#carouselExampleFade {
+    width: 500px;
+    height: 500px;
+    
+}
+img {
+    border-radius: 10%;
+}
+
+@media (max-width: 700px) {
+    
+    nav {font-size: 8px;}
+    ul{width: 100%;
+    margin:0px;}
+    p{ font-size: 14px;}
+    h2{font-size: 20px;}
+    .contenedor1videos{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .video{
+        width: 90%;
+        height: auto;
+        margin: 10px;
+
+    }
 }
